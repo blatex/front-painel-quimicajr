@@ -9,18 +9,18 @@
     <meta name="author" content="">
     <title>Química Jr - Painel do Administrador</title>
     <!-- Bootstrap core CSS-->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin.css" rel="stylesheet">
-	<link href="css/painel.css" rel="stylesheet">
+    <link href="../css/sb-admin.css" rel="stylesheet">
+	<link href="../css/painel.css" rel="stylesheet">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
     <!-- Navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-        <a class="navbar-brand pagina-atual" href="index.html">Química Jr - Painel do Administrador</a>
+        <a class="navbar-brand pagina-atual" href="../index.html">Química Jr - Painel do Administrador</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,7 +48,7 @@
                   </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Funcionários">
-                  <a class="nav-link" href="categoria/categoria_index.html">
+                  <a class="nav-link" href="../categoria/categoria_index.html">
                     <i class="fa fa-fw fa-sitemap"></i>
                     <span class="nav-link-text">Categorias</span>
                   </a>
@@ -66,13 +66,13 @@
                   </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Unidades">
-                    <a class="nav-link" href="blog/blog_index.html">
+                    <a class="nav-link" href="../blog/blog_index.html">
                       <i class="fa fa-fw fa-mouse-pointer"></i>
                       <span class="nav-link-text">Blog</span>
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Unidades">
-                    <a class="nav-link" href="unidades/unidades_index.html">
+                    <a class="nav-link" href="conta_index.html">
                       <i class="fa fa-fw fa-user"></i>
                       <span class="nav-link-text">Contas</span>
                     </a>
@@ -109,63 +109,90 @@
         </div>
     </nav>
 	
-  <!-- Conteúdo -->
-  <div class="content-wrapper">
-    <div class="container-fluid">
-      <div class="container">
-          <h1>Bem-vindo ao painel de administrador!</h1>
-          <h4>Aqui você tem controle do conteúdo de seu site navegando pelos menus.</h4><br>
-		  <p><strong>Notícias:</strong> Nesta aba você pode adicionar, editar ou excluir uma notícia</p>
-		  <p><strong>Equipamentos:</strong> Nesta aba você pode adicionar, editar ou excluir um equipamento</p>
-		  <p><strong>Doutores:</strong> Nesta aba você pode adicionar, editar ou excluir um doutor</p>
-		  <p><strong>Funcionários:</strong> Nesta aba você pode adicionar, editar ou excluir um funcionário</p>
-		  <p><strong>Unidades:</strong> Nesta aba você pode adicionar, editar ou excluir uma unidade</p>
-		  <p><strong>Exames:</strong> Nesta aba você pode adicionar, editar ou excluir um exame</p>
-		  <p><strong>Procedimentos:</strong> Nesta aba você pode adicionar, editar ou excluir um procedimento de um exame já existente</p>
-		  <p><strong>Meus Dados:</strong> Nesta aba você pode alterar sua senha</p>
-          <p>Você pode entrar em contato com a Info Jr caso precise!</p>
-      </div>
-	  
-		<!-- Copyright Info Jr -->
-            <footer class="sticky-footer">
+    <!-- Conteúdo -->
+    <div class="content-wrapper">
+        <div class="container">           
+            <!-- Conteúdo do Painel -->
+            <div class="container">	
+                                        
+                <div class="title-section">
+                    <h2>Nova Conta</h2>
+                </div>
+                
                 <div class="container">
-                    <div class="text-center">
-                        <small>Copyright © Info Jr. 2018</small>
-                    </div>
-                </div>
-            </footer>
-            
-            <!-- Botão de Voltar para Cima -->
-            <a class="scroll-to-top rounded" href="#page-top">
-              <i class="fa fa-angle-up"></i>
-            </a>
-            
-            <!-- Modal de Logout -->
-            <div class="modal fade" id="logout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Pronto para sair?</h5>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">×</span>
-                            </button>
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="text" class="form-control" id="email" placeholder="">
                         </div>
-                        <div class="modal-body">Selecione "Logout" se você já fez todas as alterações que queria e deseja sair.</div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                            <a class="btn btn-primary" href="login.html">Logout</a>
+                    </form>
+                </div>
+
+                <!-- Botões de Salvar e Cancelar -->
+                <div class="container done-btns">
+                    <button class="btn btn-success" data-toggle="modal" data-target="#envia-email"><i class="icon-fa fa fa-check"></i>Enviar</button>
+                    <a href="conta_index.html" class="btn btn-danger"><i class="icon-fa fa fa-times"></i>Cancelar</a>
+                </div>
+
+                <!-- Copyright Info Jr -->
+                <footer class="sticky-footer">
+                    <div class="container">
+                        <div class="text-center">
+                            <small>Copyright © Info Jr. 2018</small>
                         </div>
                     </div>
+                </footer>
+
+                <!-- Botão de Voltar para Cima -->
+                <a class="scroll-to-top rounded" href="#page-top">
+                    <i class="fa fa-angle-up"></i>
+                </a>
+
+                <!-- Modal de Logout -->
+                <div class="modal fade" id="logout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Pronto para sair?</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">Selecione "Logout" se você já fez todas as alterações que queria e deseja sair.</div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                                <a class="btn btn-primary" href="../login.html">Logout</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Modal de "Post publicado com sucesso!" -->
+                <div class="modal fade" id="envia-email" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Convite enviado com sucesso!</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                                </button>
+                            </div>                    
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" type="button" data-dismiss="modal">OK</button>
+                                <!-- Seria uma boa redirecionar pra conta_index.html quando aperta em OK -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bootstrap core JavaScript-->
+                <script src="../vendor/jquery/jquery.min.js"></script>
+                <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <!-- Core plugin JavaScript-->
+                <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+                <!-- Custom scripts for all pages-->
+                <script src="../js/sb-admin.min.js"></script>
             </div>
-			           
-            <!-- Bootstrap core JavaScript-->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-            <!-- Core plugin JavaScript-->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-            <!-- Custom scripts for all pages-->
-            <script src="js/sb-admin.min.js"></script>
         </div>
     </div>
 </body>
