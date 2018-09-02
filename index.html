@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Química Jr - Painel do Administrador</title>
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+	<link href="css/painel.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <a class="navbar-brand pagina-atual" href="index.html">Química Jr - Painel do Administrador</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Barra Lateral -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <!-- Lista do Conteúdo Editável -->
+            <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Notícias">
+                  <a class="nav-link" href="noticias/noticias_index.html">
+                    <i class="fa fa-fw fa-home"></i>
+                    <span class="nav-link-text">Carrossel</span>
+                  </a>
+                </li>
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Equipamentos">
+					<a class="nav-link" href="equipamentos/equipamentos_index.html">
+						<i class="fa fa-fw fa-align-left"></i>
+						<span class="nav-link-text">Sobre</span>
+					</a>
+				</li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Doutores">
+                  <a class="nav-link" href="doutores/doutores_index.html">
+                    <i class="fa fa-fw fa-folder"></i>
+                    <span class="nav-link-text">Portfólio</span>
+                  </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Funcionários">
+                  <a class="nav-link" href="funcionarios/funcionarios_index.html">
+                    <i class="fa fa-fw fa-sitemap"></i>
+                    <span class="nav-link-text">Categorias</span>
+                  </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Unidades">
+                  <a class="nav-link" href="unidades/unidades_index.html">
+                    <i class="fa fa-fw fa-handshake-o"></i>
+                    <span class="nav-link-text">Parceiros</span>
+                  </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Exames">
+                  <a class="nav-link" href="exames/exames_index.html">
+                    <i class="fa fa-fw fa-users"></i>
+                    <span class="nav-link-text">Time</span>
+                  </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Unidades">
+                    <a class="nav-link" href="unidades/unidades_index.html">
+                      <i class="fa fa-fw fa-mouse-pointer"></i>
+                      <span class="nav-link-text">Blog</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Unidades">
+                    <a class="nav-link" href="unidades/unidades_index.html">
+                      <i class="fa fa-fw fa-user"></i>
+                      <span class="nav-link-text">Contas</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Procedimentos">
+                  <a class="nav-link" href="procedimentos/procedimentos_index.html">
+                    <i class="fa fa-fw fa-external-link"></i>
+                    <span class="nav-link-text">Redes Sociais</span>
+                  </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Contato">
+                  <a class="nav-link" href="dados/dados_index.html">
+                    <i class="fa fa-fw fa-lock"></i>
+                    <span class="nav-link-text">Dados</span>
+                  </a>
+                </li>
+            </ul>
+            
+            <!-- Seta de Minimizar a Barra Lateral -->
+            <ul class="navbar-nav sidenav-toggler">
+                <li class="nav-item">
+                    <a class="nav-link text-center" id="sidenavToggler">
+                        <i class="fa fa-fw fa-angle-left"></i>
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- Logout -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#logout"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	
+  <!-- Conteúdo -->
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <div class="container">
+          <h1>Bem-vindo ao painel de administrador!</h1>
+          <h4>Aqui você tem controle do conteúdo de seu site navegando pelos menus.</h4><br>
+		  <p><strong>Notícias:</strong> Nesta aba você pode adicionar, editar ou excluir uma notícia</p>
+		  <p><strong>Equipamentos:</strong> Nesta aba você pode adicionar, editar ou excluir um equipamento</p>
+		  <p><strong>Doutores:</strong> Nesta aba você pode adicionar, editar ou excluir um doutor</p>
+		  <p><strong>Funcionários:</strong> Nesta aba você pode adicionar, editar ou excluir um funcionário</p>
+		  <p><strong>Unidades:</strong> Nesta aba você pode adicionar, editar ou excluir uma unidade</p>
+		  <p><strong>Exames:</strong> Nesta aba você pode adicionar, editar ou excluir um exame</p>
+		  <p><strong>Procedimentos:</strong> Nesta aba você pode adicionar, editar ou excluir um procedimento de um exame já existente</p>
+		  <p><strong>Meus Dados:</strong> Nesta aba você pode alterar sua senha</p>
+          <p>Você pode entrar em contato com a Info Jr caso precise!</p>
+      </div>
+	  
+		<!-- Copyright Info Jr -->
+            <footer class="sticky-footer">
+                <div class="container">
+                    <div class="text-center">
+                        <small>Copyright © Info Jr. 2018</small>
+                    </div>
+                </div>
+            </footer>
+            
+            <!-- Botão de Voltar para Cima -->
+            <a class="scroll-to-top rounded" href="#page-top">
+              <i class="fa fa-angle-up"></i>
+            </a>
+            
+            <!-- Modal de Logout -->
+            <div class="modal fade" id="logout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Pronto para sair?</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Selecione "Logout" se você já fez todas as alterações que queria e deseja sair.</div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                            <a class="btn btn-primary" href="login.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			           
+            <!-- Bootstrap core JavaScript-->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- Core plugin JavaScript-->
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <!-- Custom scripts for all pages-->
+            <script src="js/sb-admin.min.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
