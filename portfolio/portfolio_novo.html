@@ -42,7 +42,7 @@
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Portfólio">
-                    <a class="nav-link" href="../portfolio/portfolio_index.html">
+                    <a class="nav-link" href="portfolio_index.html">
                     <i class="fa fa-fw fa-folder"></i>
                     <span class="nav-link-text">Portfólio</span>
                     </a>
@@ -66,7 +66,7 @@
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Categorias">
-                    <a class="nav-link" href="categoria_index.html">
+                    <a class="nav-link" href="../categoria/categoria_index.html">
                         <i class="fa fa-fw fa-sitemap"></i>
                         <span class="nav-link-text">Categorias</span>
                     </a>
@@ -112,111 +112,113 @@
     <!-- Conteúdo -->
     <div class="content-wrapper">
         <div class="container">           
-            <div class="container-fluid">	                                       
-                <div class="container title-section">
-                    <h2>Nova Categoria</h2>
+            <!-- Conteúdo do Painel -->
+            <div class="container">	
+                
+                <div class="title-section">
+                    <h2>Novo Projeto</h2>
                 </div>
-            
+
                 <div class="container">
                     <form>
                         <!-- Nome -->
                         <div class="form-group">
-                            <label for="nome">Nome:</label>
+                            <label for="nome">Nome do projeto:</label>
                             <input type="text" class="form-control" id="nome" placeholder="">
                         </div>
 
-                        <!-- Ícones -->
-                        <div style="margin-bottom: 25px">
-                            <div class="form-group">
-                                <label for="icone">Ícone:</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="flask" value="1" checked>
-                                <label class="form-check-label" for="flask">
-                                        <i class="fa fa-fw fa-flask"></i>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="wrench" value="2">
-                                <label class="form-check-label" for="wrench">
-                                        <i class="fa fa-fw fa-wrench"></i>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="leaf" value="3">
-                                <label class="form-check-label" for="leaf">
-                                        <i class="fa fa-fw fa-leaf"></i>
-                                </label>
-                            </div>
+                        <!-- Imagem do Projeto -->
+                        <div>
+                            <label for="customFile">Escolha uma imagem:</label>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Arquivo...</label>
+                        </div>
+                        <br><br>
+
+                        <!-- Ordem -->
+                        <div class="form-group">
+                            <label for="ordem">Ordem:</label>
+                            <select name="ordem" class="dropdown_box1 form-control">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="descricao">Descrição:</label>
+                            <textarea name="descricao" cols="40" rows="10" id="descricao" class="form-control"></textarea>
                         </div>
                     </form>
                 </div>
 
                 <!-- Botões de Salvar e Cancelar -->
-                <div class="container done-btns">
-                    <button class="btn btn-success" data-toggle="modal" data-target="#salva-categoria"><i class="icon-fa fa fa-check"></i>Salvar</button>
-                    <a href="categoria_index.html" class="btn btn-danger"><i class="icon-fa fa fa-times"></i>Cancelar</a>
+                <div class="container done-btns" style="margin-bottom: 25px">
+                    <button class="btn btn-success" data-toggle="modal" data-target="#salva-projeto"><i class="icon-fa fa fa-check"></i>Salvar</button>
+                    <a href="portfolio_index.html" class="btn btn-danger"><i class="icon-fa fa fa-times"></i>Cancelar</a>
                 </div>
-
-                <!-- Copyright Info Jr -->
-                <footer class="sticky-footer">
-                    <div class="container">
-                        <div class="text-center">
-                            <small>Copyright © Info Jr. 2018</small>
-                        </div>
-                    </div>
-                </footer>
-
-                <!-- Botão de Voltar para Cima -->
-                <a class="scroll-to-top rounded" href="#page-top">
-                    <i class="fa fa-angle-up"></i>
-                </a>
-
-                <!-- Modal de Logout -->
-                <div class="modal fade" id="logout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Pronto para sair?</h5>
-                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">Selecione "Logout" se você já fez todas as alterações que queria e deseja sair.</div>
-                            <div class="modal-footer">
-                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                                <a class="btn btn-primary" href="../login.html">Logout</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal de "Categoria cadastrada com sucesso!" -->
-                <div class="modal fade" id="salva-categoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Categoria cadastrada com sucesso!</h5>
-                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                                </button>
-                            </div>                    
-                            <div class="modal-footer">
-                                <button class="btn btn-primary" type="button" data-dismiss="modal">OK</button>
-                                <!-- Seria uma boa redirecionar pra categoria_index.html quando aperta em OK -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bootstrap core JavaScript-->
-                <script src="../vendor/jquery/jquery.min.js"></script>
-                <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-                <!-- Core plugin JavaScript-->
-                <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
-                <!-- Custom scripts for all pages-->
-                <script src="../js/sb-admin.min.js"></script>
             </div>
+
+            <!-- Copyright Info Jr -->
+            <footer class="sticky-footer">
+                <div class="container">
+                    <div class="text-center">
+                        <small>Copyright © Info Jr. 2018</small>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Botão de Voltar para Cima -->
+            <a class="scroll-to-top rounded" href="#page-top">
+                <i class="fa fa-angle-up"></i>
+            </a>
+
+            <!-- Modal de Logout -->
+            <div class="modal fade" id="logout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Pronto para sair?</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Selecione "Logout" se você já fez todas as alterações que queria e deseja sair.</div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                            <a class="btn btn-primary" href="../login.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal de "Projeto cadastrado com sucesso!" -->
+            <div class="modal fade" id="salva-projeto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Projeto cadastrado com sucesso!</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                            </button>
+                        </div>                    
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" type="button" data-dismiss="modal">OK</button>
+                            <!-- Seria uma boa redirecionar pra portfolio_index.html quando aperta em OK -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap core JavaScript-->
+            <script src="../vendor/jquery/jquery.min.js"></script>
+            <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- Core plugin JavaScript-->
+            <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+            <!-- Custom scripts for all pages-->
+            <script src="../js/sb-admin.min.js"></script>
         </div>
     </div>
 </body>

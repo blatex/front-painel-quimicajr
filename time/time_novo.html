@@ -54,7 +54,7 @@
                     </a>    
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Time">
-                    <a class="nav-link" href="../time/time_index.html">
+                    <a class="nav-link" href="time_index.html">
                         <i class="fa fa-fw fa-users"></i>
                         <span class="nav-link-text">Time</span>
                     </a>
@@ -66,7 +66,7 @@
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Categorias">
-                    <a class="nav-link" href="categoria_index.html">
+                    <a class="nav-link" href="../categoria/categoria_index.html">
                         <i class="fa fa-fw fa-sitemap"></i>
                         <span class="nav-link-text">Categorias</span>
                     </a>
@@ -112,11 +112,14 @@
     <!-- Conteúdo -->
     <div class="content-wrapper">
         <div class="container">           
-            <div class="container-fluid">	                                       
-                <div class="container title-section">
-                    <h2>Nova Categoria</h2>
+            <!-- Conteúdo do Painel -->
+            <div class="container">	
+                                        
+                <!-- Botão de Novo Membro -->
+                <div class="title-section">
+                    <h2>Novo Membro</h2>
                 </div>
-            
+
                 <div class="container">
                     <form>
                         <!-- Nome -->
@@ -125,38 +128,34 @@
                             <input type="text" class="form-control" id="nome" placeholder="">
                         </div>
 
-                        <!-- Ícones -->
-                        <div style="margin-bottom: 25px">
-                            <div class="form-group">
-                                <label for="icone">Ícone:</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="flask" value="1" checked>
-                                <label class="form-check-label" for="flask">
-                                        <i class="fa fa-fw fa-flask"></i>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="wrench" value="2">
-                                <label class="form-check-label" for="wrench">
-                                        <i class="fa fa-fw fa-wrench"></i>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="leaf" value="3">
-                                <label class="form-check-label" for="leaf">
-                                        <i class="fa fa-fw fa-leaf"></i>
-                                </label>
-                            </div>
+                        <!-- Cargo -->
+                        <div class="form-group">
+                            <label for="cargo">Cargo:</label>
+                            <input type="text" class="form-control" id="cargo" placeholder="">
+                        </div>
+
+                        <!-- Link -->
+                        <div class="form-group">
+                            <label for="link">Link da rede social:</label>
+                            <input type="text" class="form-control" id="link" placeholder="">
+                        </div>
+
+                        <!-- Imagem de Perfil -->
+                        <div>
+                            <label for="customFile">Escolha uma foto de perfil:</label>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Arquivo...</label>
                         </div>
                     </form>
-                </div>
 
-                <!-- Botões de Salvar e Cancelar -->
-                <div class="container done-btns">
-                    <button class="btn btn-success" data-toggle="modal" data-target="#salva-categoria"><i class="icon-fa fa fa-check"></i>Salvar</button>
-                    <a href="categoria_index.html" class="btn btn-danger"><i class="icon-fa fa fa-times"></i>Cancelar</a>
-                </div>
+                    <!-- Botões de Salvar e Cancelar -->
+                    <div class="container done-btns" style="padding: 0">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#salva-membro"><i class="icon-fa fa fa-check"></i>Salvar</button>
+                        <a href="time_index.html" class="btn btn-danger"><i class="icon-fa fa fa-times"></i>Cancelar</a>
+                    </div>
+                </div>         
 
                 <!-- Copyright Info Jr -->
                 <footer class="sticky-footer">
@@ -191,19 +190,19 @@
                     </div>
                 </div>
 
-                <!-- Modal de "Categoria cadastrada com sucesso!" -->
-                <div class="modal fade" id="salva-categoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <!-- Modal de "Membro cadastrado com sucesso!" -->
+                <div class="modal fade" id="salva-membro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Categoria cadastrada com sucesso!</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Membro cadastrado com sucesso!</h5>
                                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                                 </button>
                             </div>                    
                             <div class="modal-footer">
                                 <button class="btn btn-primary" type="button" data-dismiss="modal">OK</button>
-                                <!-- Seria uma boa redirecionar pra categoria_index.html quando aperta em OK -->
+                                <!-- Seria uma boa redirecionar pra time_index.html quando aperta em OK -->
                             </div>
                         </div>
                     </div>

@@ -66,7 +66,7 @@
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Categorias">
-                    <a class="nav-link" href="categoria_index.html">
+                    <a class="nav-link" href="../categoria/categoria_index.html">
                         <i class="fa fa-fw fa-sitemap"></i>
                         <span class="nav-link-text">Categorias</span>
                     </a>
@@ -78,7 +78,7 @@
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Redes Sociais">
-                    <a class="nav-link" href="../redes-sociais/sociais_index.html">
+                    <a class="nav-link" href="sociais_index.html">
                     <i class="fa fa-fw fa-external-link"></i>
                     <span class="nav-link-text">Redes Sociais</span>
                     </a>
@@ -112,50 +112,34 @@
     <!-- Conteúdo -->
     <div class="content-wrapper">
         <div class="container">           
-            <div class="container-fluid">	                                       
-                <div class="container title-section">
-                    <h2>Nova Categoria</h2>
+            <!-- Conteúdo do Painel -->
+            <div class="container">	
+
+                <div class="title-section">
+                    <h2>Nova Rede Social</h2>
                 </div>
-            
+
+                <!-- Rede Social Exemplo 1 -->
                 <div class="container">
                     <form>
                         <!-- Nome -->
                         <div class="form-group">
-                            <label for="nome">Nome:</label>
+                            <label for="nome">Nome da rede social:</label>
                             <input type="text" class="form-control" id="nome" placeholder="">
                         </div>
 
-                        <!-- Ícones -->
-                        <div style="margin-bottom: 25px">
-                            <div class="form-group">
-                                <label for="icone">Ícone:</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="flask" value="1" checked>
-                                <label class="form-check-label" for="flask">
-                                        <i class="fa fa-fw fa-flask"></i>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="wrench" value="2">
-                                <label class="form-check-label" for="wrench">
-                                        <i class="fa fa-fw fa-wrench"></i>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="leaf" value="3">
-                                <label class="form-check-label" for="leaf">
-                                        <i class="fa fa-fw fa-leaf"></i>
-                                </label>
-                            </div>
+                        <!-- Link -->
+                        <div class="form-group">
+                            <label for="link">Link:</label>
+                            <input type="text" class="form-control" id="link" placeholder="">
                         </div>
                     </form>
-                </div>
 
-                <!-- Botões de Salvar e Cancelar -->
-                <div class="container done-btns">
-                    <button class="btn btn-success" data-toggle="modal" data-target="#salva-categoria"><i class="icon-fa fa fa-check"></i>Salvar</button>
-                    <a href="categoria_index.html" class="btn btn-danger"><i class="icon-fa fa fa-times"></i>Cancelar</a>
+                    <!-- Botões de Salvar e Cancelar -->
+                    <div class="container done-btns" style="padding: 0">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#salva-social"><i class="icon-fa fa fa-check"></i>Salvar</button>
+                        <a href="sociais_index.html" class="btn btn-danger"><i class="icon-fa fa fa-times"></i>Cancelar</a>
+                    </div>
                 </div>
 
                 <!-- Copyright Info Jr -->
@@ -191,19 +175,19 @@
                     </div>
                 </div>
 
-                <!-- Modal de "Categoria cadastrada com sucesso!" -->
-                <div class="modal fade" id="salva-categoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <!-- Modal de "Rede social cadastrada com sucesso!" -->
+                <div class="modal fade" id="salva-social" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Categoria cadastrada com sucesso!</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Rede social cadastrada com sucesso!</h5>
                                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                                 </button>
                             </div>                    
                             <div class="modal-footer">
                                 <button class="btn btn-primary" type="button" data-dismiss="modal">OK</button>
-                                <!-- Seria uma boa redirecionar pra categoria_index.html quando aperta em OK -->
+                                <!-- Seria uma boa redirecionar pra sociais_index.html quando aperta em OK -->
                             </div>
                         </div>
                     </div>

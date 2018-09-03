@@ -66,7 +66,7 @@
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Categorias">
-                    <a class="nav-link" href="categoria_index.html">
+                    <a class="nav-link" href="../categoria/categoria_index.html">
                         <i class="fa fa-fw fa-sitemap"></i>
                         <span class="nav-link-text">Categorias</span>
                     </a>
@@ -84,7 +84,7 @@
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dados">
-                    <a class="nav-link" href="../dados/dados_index.html">
+                    <a class="nav-link" href="dados_index.html">
                     <i class="fa fa-fw fa-lock"></i>
                     <span class="nav-link-text">Dados da Empresa</span>
                     </a>
@@ -112,51 +112,66 @@
     <!-- Conteúdo -->
     <div class="content-wrapper">
         <div class="container">           
-            <div class="container-fluid">	                                       
-                <div class="container title-section">
-                    <h2>Nova Categoria</h2>
+            <!-- Conteúdo do Painel -->
+            <div class="container">	
+
+                <!-- Meus Dados -->
+                <div class="title-section">
+                    <h2>Dados</h2>
                 </div>
-            
+
                 <div class="container">
                     <form>
-                        <!-- Nome -->
+                        <!-- Email -->
                         <div class="form-group">
-                            <label for="nome">Nome:</label>
-                            <input type="text" class="form-control" id="nome" placeholder="">
+                            <label for="email">Email:</label>
+                            <input type="text" class="form-control" id="email" placeholder="">
                         </div>
 
-                        <!-- Ícones -->
-                        <div style="margin-bottom: 25px">
-                            <div class="form-group">
-                                <label for="icone">Ícone:</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="flask" value="1" checked>
-                                <label class="form-check-label" for="flask">
-                                        <i class="fa fa-fw fa-flask"></i>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="wrench" value="2">
-                                <label class="form-check-label" for="wrench">
-                                        <i class="fa fa-fw fa-wrench"></i>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="leaf" value="3">
-                                <label class="form-check-label" for="leaf">
-                                        <i class="fa fa-fw fa-leaf"></i>
-                                </label>
-                            </div>
+                        <!-- Senha -->
+                        <div class="form-group">
+                            <label for="senha">Senha:</label>
+                            <input type="password" class="form-control" id="senha" placeholder="">
                         </div>
                     </form>
+
+                    <!-- Botões de Salvar e Cancelar -->
+                    <div class="container done-btns" style="padding: 0">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#salva-senha"><i class="icon-fa fa fa-check"></i>Salvar</button>
+                    </div>
+                </div>   
+                
+                <!-- Contato -->
+                <div class="title-section" style="margin-top: 40px">
+                    <h2>Contato</h2>
                 </div>
 
-                <!-- Botões de Salvar e Cancelar -->
-                <div class="container done-btns">
-                    <button class="btn btn-success" data-toggle="modal" data-target="#salva-categoria"><i class="icon-fa fa fa-check"></i>Salvar</button>
-                    <a href="categoria_index.html" class="btn btn-danger"><i class="icon-fa fa fa-times"></i>Cancelar</a>
-                </div>
+                <div class="container">
+                    <form>
+                        <!-- Telefone -->
+                        <div class="form-group">
+                            <label for="telefone">Telefone:</label>
+                            <input type="text" class="form-control" id="telefone" placeholder="">
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="text" class="form-control" id="email" placeholder="">
+                        </div>
+
+                        <!-- Endereço -->
+                        <div class="form-group">
+                            <label for="endereco">Endereço:</label>
+                            <input type="text" class="form-control" id="endereco" placeholder="">
+                        </div>
+                    </form>
+
+                    <!-- Botões de Salvar e Cancelar -->
+                    <div class="container done-btns" style="padding: 0; margin-bottom: 25px">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#salva-contato"><i class="icon-fa fa fa-check"></i>Salvar</button>
+                    </div>
+                </div>   
 
                 <!-- Copyright Info Jr -->
                 <footer class="sticky-footer">
@@ -191,19 +206,37 @@
                     </div>
                 </div>
 
-                <!-- Modal de "Categoria cadastrada com sucesso!" -->
-                <div class="modal fade" id="salva-categoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <!-- Modal de "Senha alterada com sucesso!" -->
+                <div class="modal fade" id="salva-senha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Categoria cadastrada com sucesso!</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Senha alterada com sucesso!</h5>
                                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                                 </button>
                             </div>                    
                             <div class="modal-footer">
                                 <button class="btn btn-primary" type="button" data-dismiss="modal">OK</button>
-                                <!-- Seria uma boa redirecionar pra categoria_index.html quando aperta em OK -->
+                                <!-- Seria uma boa redirecionar pra dados_index.html quando aperta em OK -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal de "Contato alterado com sucesso!" -->
+                <div class="modal fade" id="salva-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Contato alterado com sucesso!</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                                </button>
+                            </div>                    
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" type="button" data-dismiss="modal">OK</button>
+                                <!-- Seria uma boa redirecionar pra dados_index.html quando aperta em OK -->
                             </div>
                         </div>
                     </div>

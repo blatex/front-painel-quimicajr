@@ -54,7 +54,7 @@
                     </a>    
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Time">
-                    <a class="nav-link" href="../time/time_index.html">
+                    <a class="nav-link" href="time_index.html">
                         <i class="fa fa-fw fa-users"></i>
                         <span class="nav-link-text">Time</span>
                     </a>
@@ -66,7 +66,7 @@
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Categorias">
-                    <a class="nav-link" href="categoria_index.html">
+                    <a class="nav-link" href="../categoria/categoria_index.html">
                         <i class="fa fa-fw fa-sitemap"></i>
                         <span class="nav-link-text">Categorias</span>
                     </a>
@@ -112,50 +112,121 @@
     <!-- Conteúdo -->
     <div class="content-wrapper">
         <div class="container">           
-            <div class="container-fluid">	                                       
-                <div class="container title-section">
-                    <h2>Nova Categoria</h2>
+            <!-- Conteúdo do Painel -->
+            <div class="container">	
+                                        
+                <!-- Botão de Novo Membro -->
+                <div class="title-section">
+                    <h2>Time</h2>
+                    <a href="time_novo.html" class="btn btn-success"><i class="icon-fa fa fa-plus"></i>Novo Membro</a>
                 </div>
             
+                <!-- Membro Exemplo 1 -->
                 <div class="container">
-                    <form>
-                        <!-- Nome -->
-                        <div class="form-group">
-                            <label for="nome">Nome:</label>
-                            <input type="text" class="form-control" id="nome" placeholder="">
-                        </div>
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0 d-flex justify-content-between align-items-center">Membro 1
+                                    <div>
+                                        <button class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#membro-um" aria-expanded="true" aria-controls="membro-um"><i class="icon-fa fa fa-pencil"></i>Editar</button>
+                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exclui-membro"><i class="icon-fa fa fa-trash-o"></i>Excluir</button>
+                                    </div>
+                                </h5>
+                            </div>
 
-                        <!-- Ícones -->
-                        <div style="margin-bottom: 25px">
-                            <div class="form-group">
-                                <label for="icone">Ícone:</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="flask" value="1" checked>
-                                <label class="form-check-label" for="flask">
-                                        <i class="fa fa-fw fa-flask"></i>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="wrench" value="2">
-                                <label class="form-check-label" for="wrench">
-                                        <i class="fa fa-fw fa-wrench"></i>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="leaf" value="3">
-                                <label class="form-check-label" for="leaf">
-                                        <i class="fa fa-fw fa-leaf"></i>
-                                </label>
+                            <div id="membro-um" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <form>
+                                        <!-- Nome -->
+                                        <div class="form-group">
+                                            <label for="nome">Nome:</label>
+                                            <input type="text" class="form-control" id="nome" placeholder="">
+                                        </div>
+
+                                        <!-- Cargo -->
+                                        <div class="form-group">
+                                            <label for="cargo">Cargo:</label>
+                                            <input type="text" class="form-control" id="cargo" placeholder="">
+                                        </div>
+
+                                        <!-- Link -->
+                                        <div class="form-group">
+                                            <label for="link">Link da rede social:</label>
+                                            <input type="text" class="form-control" id="link" placeholder="">
+                                        </div>
+
+                                        <!-- Imagem de Perfil -->
+                                        <div>
+                                            <label for="customFile">Escolha uma foto de perfil:</label>
+                                        </div>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Arquivo...</label>
+                                        </div>
+
+                                        <!-- Botão de Salvar -->
+										<button type="submit" class="btn btn-success mt-4" data-toggle="collapse" data-target="#membro-um">
+                                            <i class="icon-fa fa fa-check"></i>Salvar
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
 
-                <!-- Botões de Salvar e Cancelar -->
-                <div class="container done-btns">
-                    <button class="btn btn-success" data-toggle="modal" data-target="#salva-categoria"><i class="icon-fa fa fa-check"></i>Salvar</button>
-                    <a href="categoria_index.html" class="btn btn-danger"><i class="icon-fa fa fa-times"></i>Cancelar</a>
+                <!-- Membro Exemplo 2 -->
+                <div class="container">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0 d-flex justify-content-between align-items-center">Membro 2
+                                    <div>
+                                        <button class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#membro-dois" aria-expanded="true" aria-controls="membro-dois"><i class="icon-fa fa fa-pencil"></i>Editar</button>
+                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exclui-membro"><i class="icon-fa fa fa-trash-o"></i>Excluir</button>
+                                    </div>
+                                </h5>
+                            </div>
+
+                            <div id="membro-dois" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <form>
+                                        <!-- Nome -->
+                                        <div class="form-group">
+                                            <label for="nome">Nome:</label>
+                                            <input type="text" class="form-control" id="nome" placeholder="">
+                                        </div>
+
+                                        <!-- Cargo -->
+                                        <div class="form-group">
+                                            <label for="cargo">Cargo:</label>
+                                            <input type="text" class="form-control" id="cargo" placeholder="">
+                                        </div>
+
+                                        <!-- Link -->
+                                        <div class="form-group">
+                                            <label for="link">Link da rede social:</label>
+                                            <input type="text" class="form-control" id="link" placeholder="">
+                                        </div>
+
+                                        <!-- Imagem de Perfil -->
+                                        <div>
+                                            <label for="customFile">Escolha uma foto de perfil:</label>
+                                        </div>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Arquivo...</label>
+                                        </div>
+
+                                        <!-- Botão de Salvar -->
+										<button type="submit" class="btn btn-success mt-4" data-toggle="collapse" data-target="#membro-dois">
+                                            <i class="icon-fa fa fa-check"></i>Salvar
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Copyright Info Jr -->
@@ -191,19 +262,19 @@
                     </div>
                 </div>
 
-                <!-- Modal de "Categoria cadastrada com sucesso!" -->
-                <div class="modal fade" id="salva-categoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <!-- Modal de Excluir Membro -->
+                <div class="modal fade" id="exclui-membro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Categoria cadastrada com sucesso!</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Deseja mesmo excluir esse membro?</h5>
                                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
+                                    <span aria-hidden="true">×</span>
                                 </button>
-                            </div>                    
+                            </div>
                             <div class="modal-footer">
-                                <button class="btn btn-primary" type="button" data-dismiss="modal">OK</button>
-                                <!-- Seria uma boa redirecionar pra categoria_index.html quando aperta em OK -->
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                                <a class="btn btn-danger" href="time_index.html">Excluir</a>
                             </div>
                         </div>
                     </div>

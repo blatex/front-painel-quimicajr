@@ -66,7 +66,7 @@
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Categorias">
-                    <a class="nav-link" href="categoria_index.html">
+                    <a class="nav-link" href="../categoria/categoria_index.html">
                         <i class="fa fa-fw fa-sitemap"></i>
                         <span class="nav-link-text">Categorias</span>
                     </a>
@@ -78,7 +78,7 @@
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Redes Sociais">
-                    <a class="nav-link" href="../redes-sociais/sociais_index.html">
+                    <a class="nav-link" href="sociais_index.html">
                     <i class="fa fa-fw fa-external-link"></i>
                     <span class="nav-link-text">Redes Sociais</span>
                     </a>
@@ -112,51 +112,80 @@
     <!-- Conteúdo -->
     <div class="content-wrapper">
         <div class="container">           
-            <div class="container-fluid">	                                       
-                <div class="container title-section">
-                    <h2>Nova Categoria</h2>
+            <!-- Conteúdo do Painel -->
+            <div class="container">	
+
+                <div class="title-section">
+                    <h2>Redes Sociais</h2>
+                    <a href="sociais_novo.html" class="btn btn-success"><i class="icon-fa fa fa-plus"></i>Nova Rede Social</a>
                 </div>
-            
+
+                <!-- Rede Social Exemplo 1 -->
                 <div class="container">
-                    <form>
-                        <!-- Nome -->
-                        <div class="form-group">
-                            <label for="nome">Nome:</label>
-                            <input type="text" class="form-control" id="nome" placeholder="">
-                        </div>
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0 d-flex justify-content-between align-items-center">Facebook
+                                    <div>
+                                        <button class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#social-um" aria-expanded="true" aria-controls="social-um"><i class="icon-fa fa fa-pencil"></i>Editar</button>
+                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exclui-social"><i class="icon-fa fa fa-trash-o"></i>Excluir</button>
+                                    </div>
+                                </h5>
+                            </div>
 
-                        <!-- Ícones -->
-                        <div style="margin-bottom: 25px">
-                            <div class="form-group">
-                                <label for="icone">Ícone:</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="flask" value="1" checked>
-                                <label class="form-check-label" for="flask">
-                                        <i class="fa fa-fw fa-flask"></i>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="wrench" value="2">
-                                <label class="form-check-label" for="wrench">
-                                        <i class="fa fa-fw fa-wrench"></i>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="icone" id="leaf" value="3">
-                                <label class="form-check-label" for="leaf">
-                                        <i class="fa fa-fw fa-leaf"></i>
-                                </label>
+                            <div id="social-um" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <form>
+                                        <!-- Link -->
+                                        <div class="form-group">
+                                            <label for="link">Link:</label>
+                                            <input type="text" class="form-control" id="link" placeholder="">
+                                        </div>
+
+                                        <!-- Botão de Salvar -->
+                                        <button type="submit" class="btn btn-success" data-toggle="collapse" data-target="#social-um">
+                                            <i class="icon-fa fa fa-check"></i>Salvar
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
 
-                <!-- Botões de Salvar e Cancelar -->
-                <div class="container done-btns">
-                    <button class="btn btn-success" data-toggle="modal" data-target="#salva-categoria"><i class="icon-fa fa fa-check"></i>Salvar</button>
-                    <a href="categoria_index.html" class="btn btn-danger"><i class="icon-fa fa fa-times"></i>Cancelar</a>
+                <!-- Rede Social Exemplo 2 -->
+                <div class="container">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0 d-flex justify-content-between align-items-center">Instagram 
+                                    <div>
+                                        <button class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#social-dois" aria-expanded="true" aria-controls="social-dois"><i class="icon-fa fa fa-pencil"></i>Editar</button>
+                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exclui-social"><i class="icon-fa fa fa-trash-o"></i>Excluir</button>
+                                    </div>
+                                </h5>
+                            </div>
+
+                            <div id="social-dois" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <form>
+                                        <!-- Link -->
+                                        <div class="form-group">
+                                            <label for="link">Link:</label>
+                                            <input type="text" class="form-control" id="link" placeholder="">
+                                        </div>
+
+                                        <!-- Botão de Salvar -->
+                                        <button type="submit" class="btn btn-success" data-toggle="collapse" data-target="#social-dois">
+                                            <i class="icon-fa fa fa-check"></i>Salvar
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+      
 
                 <!-- Copyright Info Jr -->
                 <footer class="sticky-footer">
@@ -191,19 +220,19 @@
                     </div>
                 </div>
 
-                <!-- Modal de "Categoria cadastrada com sucesso!" -->
-                <div class="modal fade" id="salva-categoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <!-- Modal de Excluir Membro -->
+                <div class="modal fade" id="exclui-social" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Categoria cadastrada com sucesso!</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Deseja mesmo excluir essa rede social?</h5>
                                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
+                                    <span aria-hidden="true">×</span>
                                 </button>
-                            </div>                    
+                            </div>
                             <div class="modal-footer">
-                                <button class="btn btn-primary" type="button" data-dismiss="modal">OK</button>
-                                <!-- Seria uma boa redirecionar pra categoria_index.html quando aperta em OK -->
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                                <a class="btn btn-danger" href="sociais_index.html">Excluir</a>
                             </div>
                         </div>
                     </div>

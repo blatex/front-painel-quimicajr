@@ -42,7 +42,7 @@
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Portfólio">
-                    <a class="nav-link" href="../portfolio/portfolio_index.html">
+                    <a class="nav-link" href="portfolio_index.html">
                     <i class="fa fa-fw fa-folder"></i>
                     <span class="nav-link-text">Portfólio</span>
                     </a>
@@ -72,7 +72,7 @@
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Contas">
-                    <a class="nav-link" href="conta_index.html">
+                    <a class="nav-link" href="../conta/conta_index.html">
                         <i class="fa fa-fw fa-user"></i>
                         <span class="nav-link-text">Contas</span>
                     </a>
@@ -114,120 +114,129 @@
         <div class="container">           
             <!-- Conteúdo do Painel -->
             <div class="container">	
-                                        
-                <!-- Botão de Nova Conta -->
+                
                 <div class="title-section">
-                    <h2>Contas</h2>
-                    <a href="conta_novo.html" class="btn btn-success"><i class="icon-fa fa fa-plus"></i>Nova Conta</a>
+                    <h2>Portfólio</h2>
+                    <a href="portfolio_novo.html" class="btn btn-success"><i class="icon-fa fa fa-plus"></i>Novo Projeto</a>
                 </div>
-            
-                <!-- Conta Exemplo 1 -->
-                <div class="container">
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0 d-flex justify-content-between align-items-center">Conta 1
-                                    <div>
-                                        <button class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#conta-um" aria-expanded="true" aria-controls="conta-um"><i class="icon-fa fa fa-eye"></i>Ver detalhes</button>
-                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exclui-conta"><i class="icon-fa fa fa-trash-o"></i>Excluir</button>
-                                    </div>
-                                </h5>
-                            </div>
 
-                            <div id="conta-um" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <!-- Cards do Portfolio -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="">
+                                <img class="card-img-top" src="../img/logos/creative-market.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <p><strong>Nome:</strong> João da Silva</p>
-                                    <p><strong>Email:</strong> joaodasilva@gmail.com</p>
-                                    <p><strong>Celular:</strong> (11) 96589-7855)</p>
+                                    <h5 class="card-title">Projeto 1</h5>
+                                    <div class="portfolio-btns">
+                                        <a href="portfolio_edita.html" class="btn btn-primary portfolio-btn btn-sm">
+                                            <i class="icon-fa fa fa-pencil"></i>Editar
+                                        </a>
+                                        <button href="#" class="btn btn-danger portfolio-btn btn-sm" data-toggle="modal" data-target="#exclui-projeto">
+                                            <i class="icon-fa fa fa-trash-o"></i>Excluir
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="">
+                                <img class="card-img-top" src="../img/logos/designmodo.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Projeto 2</h5>
+                                    <div class="portfolio-btns">
+                                        <a href="portfolio_edita.html" class="btn btn-primary portfolio-btn btn-sm">
+                                            <i class="icon-fa fa fa-pencil"></i>Editar
+                                        </a>
+                                        <button href="#" class="btn btn-danger portfolio-btn btn-sm" data-toggle="modal" data-target="#exclui-projeto">
+                                            <i class="icon-fa fa fa-trash-o"></i>Excluir
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="">
+                                <img class="card-img-top" src="../img/logos/envato.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Projeto 3</h5>
+                                    <div class="portfolio-btns">
+                                        <a href="portfolio_edita.html" class="btn btn-primary portfolio-btn btn-sm">
+                                            <i class="icon-fa fa fa-pencil"></i>Editar
+                                        </a>
+                                        <button href="#" class="btn btn-danger portfolio-btn btn-sm" data-toggle="modal" data-target="#exclui-projeto">
+                                            <i class="icon-fa fa fa-trash-o"></i>Excluir
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Conta Exemplo 2 -->
-                <div class="container">
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0 d-flex justify-content-between align-items-center">Conta 2
-                                    <div>
-                                        <button class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#conta-dois" aria-expanded="true" aria-controls="conta-dois"><i class="icon-fa fa fa-eye"></i>Ver detalhes</button>
-                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exclui-conta"><i class="icon-fa fa fa-trash-o"></i>Excluir</button>
-                                    </div>
-                                </h5>
-                            </div>
-
-                            <div id="conta-dois" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p><strong>Nome:</strong> João da Silva</p>
-                                    <p><strong>Email:</strong> joaodasilva@gmail.com</p>
-                                    <p><strong>Celular:</strong> (11) 96589-7855)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Copyright Info Jr -->
-                <footer class="sticky-footer">
-                    <div class="container">
-                        <div class="text-center">
-                            <small>Copyright © Info Jr. 2018</small>
-                        </div>
-                    </div>
-                </footer>
-
-                <!-- Botão de Voltar para Cima -->
-                <a class="scroll-to-top rounded" href="#page-top">
-                    <i class="fa fa-angle-up"></i>
-                </a>
-
-                <!-- Modal de Logout -->
-                <div class="modal fade" id="logout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Pronto para sair?</h5>
-                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">Selecione "Logout" se você já fez todas as alterações que queria e deseja sair.</div>
-                            <div class="modal-footer">
-                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                                <a class="btn btn-primary" href="../login.html">Logout</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal de Excluir Conta -->
-                <div class="modal fade" id="exclui-conta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Deseja mesmo excluir essa conta?</h5>
-                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                                <a class="btn btn-danger" href="conta_index.html">Excluir</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bootstrap core JavaScript-->
-                <script src="../vendor/jquery/jquery.min.js"></script>
-                <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-                <!-- Core plugin JavaScript-->
-                <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
-                <!-- Custom scripts for all pages-->
-                <script src="../js/sb-admin.min.js"></script>
             </div>
+
+            <!-- Copyright Info Jr -->
+            <footer class="sticky-footer">
+                <div class="container">
+                    <div class="text-center">
+                        <small>Copyright © Info Jr. 2018</small>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Botão de Voltar para Cima -->
+            <a class="scroll-to-top rounded" href="#page-top">
+                <i class="fa fa-angle-up"></i>
+            </a>
+
+            <!-- Modal de Logout -->
+            <div class="modal fade" id="logout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Pronto para sair?</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Selecione "Logout" se você já fez todas as alterações que queria e deseja sair.</div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                            <a class="btn btn-primary" href="../login.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal de Excluir Projeto -->
+            <div class="modal fade" id="exclui-projeto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Deseja mesmo excluir esse projeto?</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                            <a class="btn btn-danger" href="portfolio_index.html">Excluir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap core JavaScript-->
+            <script src="../vendor/jquery/jquery.min.js"></script>
+            <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- Core plugin JavaScript-->
+            <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+            <!-- Custom scripts for all pages-->
+            <script src="../js/sb-admin.min.js"></script>
         </div>
     </div>
 </body>
